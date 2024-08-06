@@ -1,12 +1,12 @@
 # MINI_LEX_PARSE
 
-Lexer and Parser for a Simple Custom Language
+Lexer and Parser for a Simple Custom Language. Co-made with [Adarsh Acharya (AdarshAcharya5)](https://www.github.com/AdarshAcharya5)
 
-## Overview
+## OVERVIEW
 
 This project implements a lexer and a recursive descent parser for a simple custom language. The lexer tokenizes the input code based on predefined regular expressions, and the parser generates a parse tree for the tokenized input, supporting basic constructs such as variable declarations, assignments, and loops. The parser includes error handling with panic mode for recovery from syntax errors.
 
-## Features
+## FEATURES
 
 - Tokenization of input code into tokens using regular expressions.
 - Recursive descent parsing of tokenized input to create a parse tree.
@@ -14,12 +14,12 @@ This project implements a lexer and a recursive descent parser for a simple cust
 - Error handling with panic mode for syntax error recovery.
 - Generation of a DOT file representing the parse tree and conversion to a PNG image.
 
-## Prerequisites
+## PREREQUISITES
 
 - Python 3.6 or higher
 - Graphviz (for generating the PNG file from the DOT file)
 
-## Installation
+## INSTALLATION
 
 1. **Clone the repository:**
 
@@ -43,7 +43,7 @@ This project implements a lexer and a recursive descent parser for a simple cust
     - **Windows:**
         Download and install from [Graphviz](https://graphviz.org/download/).
 
-## Usage
+## USAGE
 
 1. **Input Code:**
 
@@ -104,7 +104,7 @@ This project implements a lexer and a recursive descent parser for a simple cust
         print(f"Error opening the PNG file: {e}")
     ```
 
-## Explanation
+## EXPLANATION
 
 ### Lexer
 
@@ -207,13 +207,6 @@ def generate_parse_tree_dot(self, parse_tree):
     return '\n'.join(dot_content)
 ```
 
-## Files
-
-- `lexer.py`: Contains the lexer implementation.
-- `parser.py`: Contains the parser implementation.
-- `parse_tree.dot`: Generated DOT file of the parse tree.
-- `parse_tree.png`: Generated PNG file of the parse tree.
-
-## License
+## LICENSE
 
 This project is licensed under the MIT License.
